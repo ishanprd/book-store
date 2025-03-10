@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.png";
 import {
   Collapsible,
   CollapsibleContent,
@@ -21,9 +20,7 @@ import {
 const Sidebar = () => {
   return (
     <div className="bg-white flex flex-col py-16 max-w-[250px]">
-      <Link to="/" className="px-0 hover:scale-105 transition-transform duration-500">
-        <img src={logo} alt="Ecommerce" className="w-1/2 mx-auto hover:filter hover:drop-shadow-lg transition-all duration-500" />
-      </Link>
+      
       
       <Link to="/admin/dashboard" className="text-gray-600 font-light text-base py-8 px-8 hover:text-[#A790EA] hover:scale-105 transition-all duration-500 flex items-center">
         <LayoutDashboard className="mr-2" size={20} />
